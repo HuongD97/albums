@@ -1,6 +1,7 @@
 // This component is used to format and show an album's details
 import React from 'react';
 import { View, Text } from 'react-native';
+import Card from './Card';
 
 // Functional component
 const AlbumDetail = (props) => {
@@ -10,12 +11,11 @@ const AlbumDetail = (props) => {
     // url
     // image
     // thumbnail_image
-    
+
     return (
-        <View>
+        <Card>
             <Text>{props.album.title}</Text>
-            <Text>{props.album.artist}</Text>
-        </View>
+        </Card>
     );
 };
 
