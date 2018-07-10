@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import CardSection from './CardSection';
 
 const Card = (props) => {
+    console.log(props);
     const { containerStyle } = styles;
     return (
         <View style={containerStyle}>
