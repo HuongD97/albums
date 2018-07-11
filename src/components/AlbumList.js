@@ -3,7 +3,7 @@
 // and rendering a list of cards with each card showing
 // details for an album
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { ScrollView } from 'react-native';
 import axios from 'axios'; // Responsible for get requests
 import AlbumDetail from './AlbumDetail';
 
@@ -38,9 +38,9 @@ class AlbumList extends Component {
 
     render() {
         return (
-            <View>
+            <ScrollView>
                 {this.renderAlbums()}
-            </View>
+            </ScrollView>
         );
     };
 }

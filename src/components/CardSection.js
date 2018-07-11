@@ -9,6 +9,14 @@ const CardSection = (props) => {
     );
 };
 
+// Notes:
+// justifyContent can be used to space items within
+// a container horizontally or vertically. The default,
+// if flexDirection is not specified is column.
+// So if container style is justifyContent: 'space-around'
+// then the elements within the container will be spaced equally in the vertical
+// direction with equal padding from top and bottom. To specify the direction
+// of justifyContent just use flexDirection: 'column' or flexDirection: 'row'
 const styles = {
     containerStyle: {
         borderBottomWidth: 1,

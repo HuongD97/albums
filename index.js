@@ -5,7 +5,9 @@ import AlbumList from './src/components/AlbumList';
 
 const App = () => {
     return (
-        <View>
+        // Expand the component to fill the entire area of the device
+        // with the flex: 1
+        <View style={{flex: 1}}>
             <Header headerText={'Albums'}/>
             <AlbumList />
         </View>
