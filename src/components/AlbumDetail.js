@@ -4,6 +4,7 @@ import { View, Text, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
 import TextContainer from './TextContainer';
+import Button from './Button';
 
 // Functional component
 const AlbumDetail = ({ album }) => {
@@ -40,6 +41,9 @@ const AlbumDetail = ({ album }) => {
                         style={imageStyle}
                         source={{ uri: image }}
                     />
+            </CardSection>
+            <CardSection>
+                <Button onPress={() => console.log(title)}/>
             </CardSection>
         </Card>
     );
