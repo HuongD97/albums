@@ -1,6 +1,6 @@
 // This component is used to format and show an album's details
 import React from 'react';
-import { View, Text, Image } from 'react-native';
+import { View, Text, Image, Linking } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
 import TextContainer from './TextContainer';
@@ -12,7 +12,8 @@ const AlbumDetail = ({ album }) => {
         title,
         artist,
         thumbnail_image,
-        image
+        image,
+        url
     } = album;
 
     const {
@@ -43,7 +44,9 @@ const AlbumDetail = ({ album }) => {
                     />
             </CardSection>
             <CardSection>
-                <Button onPress={() => console.log(title)}/>
+                <Button onPress={() => Linking.openURL(url)}>
+                    Buy Now
+                </Button>
             </CardSection>
         </Card>
     );
